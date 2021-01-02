@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        FontSize="18" FontFamily="Segoe UI">
     <Grid>
         <!-- Define columns -->
         <Grid.ColumnDefinitions>
@@ -26,5 +27,17 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
+        <!-- Text Block / Label with span-->
+        <TextBlock Grid.Row="1" Grid.Column="1" 
+                   FontSize="36" Text="WPF Demo" 
+                   FontFamily="Segoe UI"
+                   Grid.ColumnSpan="3"/>
+        <!-- Text Block / Label -->
+        <TextBlock Grid.Row="2" Grid.Column="1" 
+                   Text="First Name"/>
+        <!-- Text Block / Label with name -->
+        <TextBox Grid.Row="2" Grid.Column="2" 
+                   x:Name="FirstNameText"
+                   Width="150"/>
     </Grid>
 </Window>
