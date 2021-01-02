@@ -46,6 +46,7 @@
         <Button 
             Grid.Row="3" Grid.Column="1" 
             x:Name="SubmitButton" Content="Run Me"
+            Grid.ColumnSpan="2"
             />
 
         
